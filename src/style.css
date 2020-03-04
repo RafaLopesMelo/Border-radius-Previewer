@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+}
+
+body {
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "header" "main" "footer";
+}
+
+header {
+    grid-area: header;
+    height: 20vh;
+    background-color: rgb(87, 87, 87);
+    font: bold 40pt Arial;
+}
+
+header>span {
+    color: white;
+    font: bold 60pt Arial;
+    position: relative;
+    margin-left: 2vw;
+    top: 4vh;
+}
+
+main {
+    grid-area: main;
+    height: 70vh;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-areas: "dados code box";
+}
+
+button {
+    width: 10%;
+    height: 5%;
+    position:absolute;
+    left: 45vw;
+    top: 70vh;
+}
+
+main textarea{
+    margin: 1.5vh 1.8vw auto;
+    height: 22vh;
+    width: 16vw;
+}
+
+main div#code {
+    width: 20vw;
+    height: 200px;
+    border: 1pt solid black;
+    background-color: #f3f3f3;
+    grid-area: code;
+    position: absolute;
+    top: 40vh;
+    left: 40vw;
+}
+
+main>form#dados {
+    border: 2pt solid black;
+    background-color: #f3f3f3;
+    display: block;
+    float: left;
+    width: 33%;
+    height: 60vh;
+    position: absolute;
+    bottom: 15vh;
+    left: 5%;
+    grid-area: dados;
+}
+
+main>form#dados label.type {
+    display: inline-block;
+    font: bold 15pt Arial;
+    position: relative;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+main>form#dados label.radius {
+    display: inline-block;
+    font: bold 15pt Arial;
+    position: relative;
+    margin-left: 15%;
+    margin-top: 5%;
+    position: relative;
+    top: 5vh;
+}
+
+main>form#dados input#botao {
+    width: 15vw;
+    height: 5vh;
+    position: relative;
+    bottom: -20%;
+    left: 28%;
+}
+
+main>div#box {
+    margin:auto;
+    display: block;
+    float: right;
+    width: 33%;
+    height: 60vh;
+    background-color: #f3f3f3;
+    border: 2pt solid black;
+    position: absolute;
+    bottom: 15vh;
+    right: 5%;
+    grid-area: box;
+}
+
+
+
+footer {
+    grid-area: footer;
+    height: 10vh;
+    background-color: rgb(87, 87, 87);
+}
+
+footer span {
+    display: inline-block;
+    font: bold 20pt Arial;
+    color: white;
+    margin: 3vh auto auto 15vw;
+}

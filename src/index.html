@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="pt-br">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="autor" content="Rafael Lopes de Melo">
+        <meta name="projeto" content="Border-radius Previewer">
+        <title>Border-radius Previewer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <span>Border-radius Preview</span>
+        </header>
+        <main>
+
+            <div id="code">
+            <textarea id="dados" cols="30" rows="10"></textarea></div>
+            <button>Copiar</button>
+
+            <form id="dados">
+
+                <label class="type">Pixel
+                    <input type="radio" name="type" id="pixel" value="pixel">
+                </label>
+                
+                <label class="type">Porcento
+                    <input type="radio" name="type" id="percent" value="percent">
+                </label>
+
+                <label class="radius">Border-top-left-radius: <input type="range" id="top-left" min="0" max="100"></label>
+                <label class="radius">Border-top-right-radius: <input type="range" id="top-right" min="0" max="100"></label>
+                <label class="radius">Border-bottom-right-radius: <input type="range" id="bottom-right" min="0" max="100"></label>
+                <label class="radius">Border-bottom-left-radius: <input type="range" id="bottom-left" min="0" max="100"></label>
+
+                <input type="button" value="Calcular borda" id="botao">
+
+            </form>
+
+            <div id="box"></div>
+        
+        </main>
+        <footer>
+            <span>Autor: Rafael Lopes de Melo</span>
+            <span>Contato: rafaelmelo.programmer@gmail.com</span>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
